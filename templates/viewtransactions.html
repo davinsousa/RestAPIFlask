@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database</title>
+</head>
+<body>
+    <h1>Transactions</h1>
+    {% for i in trans %}
+    <h4>Transaction {{i.id}}</h4>
+    <p>Lender : {{ i.lender }}</p>
+    <p>Borrower : {{ i.borrower }}</p>
+    <p>Amount : {{ i.amount }}</p>
+    <hr>
+    {% endfor %}
+</body>
+</html> 
